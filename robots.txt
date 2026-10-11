@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dankastudy.github.io/danka-express/sitemap.xml
+Sitemap: https://dankaexpress.netlify.app/sitemap.xml
