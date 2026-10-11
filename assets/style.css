@@ -1,0 +1,71 @@
+/* Danka Express — mobile-first news stylesheet */
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--red:#c1121f;--dark:#1a1a1a;--gray:#666;--light:#f6f6f6;--border:#e6e6e6}
+html{scroll-behavior:smooth}
+body{font-family:"Noto Sans",system-ui,-apple-system,"Segoe UI",Roboto,"Nirmala UI","Mangal",sans-serif;color:var(--dark);background:#fff;line-height:1.65;font-size:17px}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:900px;margin:0 auto;padding:0 16px}
+/* header */
+.site-header{background:var(--red);color:#fff;position:sticky;top:0;z-index:50;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+.site-header .wrap{display:flex;align-items:center;gap:12px;padding:12px 16px}
+.brand{font-size:26px;font-weight:800;letter-spacing:.5px}
+.brand small{display:block;font-size:11px;font-weight:400;opacity:.9;letter-spacing:2px}
+nav.main-nav{background:#8f0d16}
+nav.main-nav .wrap{display:flex;gap:4px;overflow-x:auto;padding:0 8px}
+nav.main-nav a{color:#fff;padding:10px 14px;font-size:15px;white-space:nowrap;font-weight:600}
+nav.main-nav a:hover{background:rgba(255,255,255,.15)}
+/* hero */
+.hero{margin:18px 0;border-radius:12px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,.12)}
+.hero img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.hero-body{padding:16px}
+.kicker{display:inline-block;background:var(--red);color:#fff;font-size:12px;font-weight:700;padding:3px 10px;border-radius:20px;margin-bottom:8px;text-transform:uppercase;letter-spacing:.5px}
+.hero h1{font-size:24px;line-height:1.35;margin-bottom:8px}
+.hero h1 a:hover{color:var(--red)}
+.meta{color:var(--gray);font-size:13px}
+/* section titles */
+.section{margin:28px 0}
+.section-title{font-size:21px;font-weight:800;border-left:5px solid var(--red);padding-left:12px;margin-bottom:14px}
+/* cards */
+.cards{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:640px){.cards{grid-template-columns:1fr 1fr}}
+.card{border:1px solid var(--border);border-radius:12px;overflow:hidden;background:#fff;transition:transform .15s}
+.card:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,.1)}
+.card img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.card-body{padding:14px}
+.card-body h3{font-size:17px;line-height:1.4;margin-bottom:6px}
+.card-body h3 a:hover{color:var(--red)}
+.card-body p{font-size:14px;color:var(--gray)}
+/* panchang strip */
+.panchang-strip{background:linear-gradient(135deg,#fff7e6,#ffe9c4);border:1px solid #f0d9a8;border-radius:12px;padding:18px}
+.panchang-strip h3{margin-bottom:10px;font-size:19px}
+.panchang-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:15px}
+.panchang-grid div{background:rgba(255,255,255,.7);padding:8px 12px;border-radius:8px}
+.panchang-grid b{color:#8a5a00}
+/* rashi chips */
+.rashi-chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.rashi-chips span{background:var(--light);border:1px solid var(--border);padding:6px 14px;border-radius:20px;font-size:14px;font-weight:600}
+/* article page */
+.breadcrumb{font-size:13px;color:var(--gray);margin:14px 0}
+.breadcrumb a{color:var(--red)}
+.article-hero{border-radius:12px;overflow:hidden;margin:12px 0}
+.article-hero img{width:100%;aspect-ratio:16/9;object-fit:cover}
+article.news h1{font-size:26px;line-height:1.35;margin:10px 0}
+.byline{display:flex;gap:12px;align-items:center;color:var(--gray);font-size:14px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:10px 0;margin:12px 0}
+.byline .author{font-weight:700;color:var(--dark)}
+article.news p{margin:14px 0;font-size:17.5px}
+article.news h2{font-size:20px;margin:22px 0 8px}
+.factbox{background:var(--light);border-left:4px solid var(--red);padding:14px 16px;border-radius:0 10px 10px 0;margin:18px 0;font-size:15.5px}
+.disclaimer{font-size:13px;color:var(--gray);border-top:1px dashed var(--border);padding-top:12px;margin-top:20px}
+/* rashifal */
+.rashi{border:1px solid var(--border);border-radius:12px;padding:16px;margin:14px 0;background:#fffdf7}
+.rashi h2{font-size:20px;color:#8a5a00;margin-bottom:6px}
+.rashi .lucky{font-size:14px;color:var(--gray);margin-top:8px}
+/* footer */
+.site-footer{background:#111;color:#bbb;margin-top:40px;padding:28px 0;font-size:14px}
+.site-footer .wrap{display:grid;gap:14px}
+.site-footer h4{color:#fff;margin-bottom:6px}
+.site-footer a:hover{color:#fff}
+.copyright{text-align:center;border-top:1px solid #333;padding-top:14px;margin-top:10px;font-size:13px}
+/* related */
+.related{margin-top:26px}
